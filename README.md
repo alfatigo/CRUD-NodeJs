@@ -1,7 +1,24 @@
-# CRUD-NodeJs - A Personal Proyect
+Clone the repo and install the dependencies.
 
-  npm i mongoose dotenv 
+git clone https://github.com/alfatigo/CRUD-NodeJs.git
+cd the-example-app.nodejs
+npm install
+Steps for read-only access
+To start the express server, run the following
 
-  Create a .env to paste your connecction string. 
+npm run start //Start the app.
+Open http://localhost:3000 and take a look around.
 
-  npm run start // Run to run the app
+Steps for read and write access (recommended)
+Step 1: Install the dependencies:
+  -npm i mongoose //MongoDB
+  -npm i dotenv //.env
+  -npm i nodemon -D
+
+Open variables.env and inject your credentials so it looks like this
+
+MONGODB_URI=<Your connection String>
+PORT=3000
+  
+To start the express server, run the following
+npm run start
