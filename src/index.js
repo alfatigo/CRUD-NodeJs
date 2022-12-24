@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 //MongoDB Connection
 mongoose
-  .connect('<Your string Connection>')
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("Connected!"))
   .catch((e)=> console.log('Error!\n',e));
 
