@@ -3,7 +3,7 @@ const { mongoose } = require("mongoose");
 require("dotenv").config();
 const userRoutes = require('./routes/user.js');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //Middleware
 app.use(express.json());
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 //MongoDB Connection
 mongoose
-  .connect('mongodb+srv://alexreyes64r:hgsJ8rchmlOHZvUG@nodecrud.g5vmhmo.mongodb.net/?retryWrites=true&w=majority')
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("Connected!"))
   .catch((e)=> console.log('Error!\n',e));
 
