@@ -12,7 +12,7 @@ app.use('/api', userRoutes);
 //Routes
 mongoose.set('strictQuery', true);
 app.get("/", (req, res) => {
-  res.send("Home");
+  res.send("Running");
 });
 
 //MongoDB Connection
