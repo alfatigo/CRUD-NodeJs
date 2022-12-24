@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 //MongoDB Connection
 mongoose
-  .connect('mongodb+srv://alexreyes64r:hgsJ8rchmlOHZvUG@nodecrud.g5vmhmo.mongodb.net/?retryWrites=true&w=majority')
+  .connect('<Your string Connection>')
   .then(() => console.log("Connected!"))
   .catch((e)=> console.log('Error!\n',e));
 
