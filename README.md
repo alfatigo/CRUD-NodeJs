@@ -1,9 +1,9 @@
-Clone the repo and install the dependencies.
+#Clone the repo and install the dependencies.
 
-git clone https://github.com/alfatigo/CRUD-NodeJs.git
-cd the-example-app.nodejs
-npm install
-Steps for read-only access
+##git clone https://github.com/alfatigo/CRUD-NodeJs.git
+##cd the-example-app.nodejs
+  npm install
+##Steps for read-only access
 To start the express server, run the following
 
 npm run start //Start the app.
